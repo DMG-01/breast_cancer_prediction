@@ -1,6 +1,6 @@
-Name: Jeremiah Bwala
-Matric Number: 22CG031843
+Name: Agboola Olorunfemi Divine
+Matric Number: 22CD032109
 Machine Learning Algorithm Used: Logistic Regression
 Model Persistence Method Used: Joblib
-Live URL of the hosted application: https://breast-cancer-detection-bp2e.onrender.com/
-GitHub Repository Link: https://github.com/Anonymousexit/Breast_cancer_detection
+Live URL of the hosted application: https://breast-cancer-prediction-o9g8.onrender.com
+GitHub Repository Link: https://github.com/DMG-01/breast_cancer_prediction

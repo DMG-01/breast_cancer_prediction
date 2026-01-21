@@ -9,7 +9,9 @@ app = Flask(__name__)
 # Model is saved in 'model/breast_cancer_model.pkl'
 # Depending on where we run app.py, the path might be relative.
 # Assuming app.py is in the root, and model is in model/
-MODEL_PATH = os.path.join('model', 'breast_cancer_model.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'model', 'breast_cancer_model.pkl')
+
 
 try:
     model_data = joblib.load(MODEL_PATH)
@@ -66,4 +68,4 @@ def index():
     return render_template('index.html', prediction=prediction, error=error)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=False, port=5000)
